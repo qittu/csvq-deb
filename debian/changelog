@@ -1,5 +1,8 @@
-csvq (1.13.1-2ppa1) bionic; urgency=medium
+csvq (1.13.2-1ppa4) bionic; urgency=medium
 
   * Initial ubuntu package based on csvq version 1.13.1
+
+    This version has changed its file structure for PPA release, and
+    its behavior is the same as csvq v1.13.1.
 
  -- Yuki <qittu@me.com>  Tue, 02 Jun 2020 09:03:38 +0000

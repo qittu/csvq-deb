@@ -2,7 +2,6 @@ Source: csvq
 Section: text
 Priority: optional
 Maintainer: Yuki <qittu@me.com>
-Uploaders: Yuki <qittu@me.com>
 Build-Depends: debhelper (>= 10),
                golang-go (>= 1.14)
 Standards-Version: 1.13.1
