@@ -1,19 +1,4 @@
 ################################
-# Project Specific Settings
-################################
-csvq
-build/
-dist/
-*.output
-
-################################
-# Jekyll
-################################
-_site/
-.sass-cache/
-.jekyll-metadata
-
-################################
 # Go
 ################################
 # Binaries for programs and plugins
@@ -27,10 +12,6 @@ _site/
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
-
-# Project-local glide cache, RE: https://github.com/Masterminds/glide/issues/736
-.glide/
-
 
 ################################
 # Editor Common
@@ -87,6 +68,7 @@ tramp
 
 # cask packages
 .cask/
+dist/
 
 # Flycheck
 flycheck_*.el
