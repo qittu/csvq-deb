@@ -1,0 +1,49 @@
+language: go
+sudo: false
+
+go:
+  - 1.11.x
+  - 1.12.x
+  - 1.13.x
+  - 1.14.x
+
+install: true
+
+script:
+  - env GO111MODULE=on go test ./...
+
+after_success:
+  - env GO111MODULE=on go test -coverprofile=coverage.txt -covermode=atomic ./...
+  - bash <(curl -s https://codecov.io/bash)
+
+before_deploy:
+  - if [ "$(echo $TRAVIS_TAG | cut -d '-' -f 2 | cut -d '.' -f 1)" = "pr" ]; then
+      env GO111MODULE=on make build-pre-release;
+    else
+      env GO111MODULE=on make build-all;
+    fi
+  - make dist
+
+deploy:
+  - provider: releases
+    api_key: $GITHUB_API_TOKEN
+    skip_cleanup: true
+    overwrite: true
+    file_glob: true
+    file: 'dist/*.tar.gz'
+    prerelease: false
+    on:
+      tags: true
+      condition: $TRAVIS_TAG =~ ^v[0-9]+\.[0-9]+\.[0-9]+$
+      go: '1.14.x'
+  - provider: releases
+    api_key: $GITHUB_API_TOKEN
+    skip_cleanup: true
+    overwrite: true
+    file_glob: true
+    file: 'dist/*.tar.gz'
+    prerelease: true
+    on:
+      tags: true
+      condition: $TRAVIS_TAG =~ ^v[0-9]+\.[0-9]+\.[0-9]+\-pr\.[0-9]+$
+      go: '1.14.x'

@@ -1,0 +1,180 @@
+header, main, footer {
+  padding-left: 280px;
+}
+
+@media only screen and (max-width : 992px) {
+  header, main, footer {
+    padding-left: 0px;
+  }
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: $secondary-color;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 2.4em;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 2.08em;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 1.73em;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 1.44em;
+}
+
+h5 {
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+h6 {
+    font-weight: 700;
+}
+
+nav, .card-panel, .card, .toast, .collapsible, .hoverable, .hoverable:hover {
+    box-shadow: none;
+}
+
+a {
+    font-weight: 500;
+}
+
+a:hover {
+    color: $link-color-light;
+}
+
+.btn:hover {
+  color: lighten($button-raised-color, 4%);
+}
+
+body {
+    @extend .grey, .lighten-4, .blue-grey-text, .text-darken-3;
+}
+
+header {
+    .site-title {
+        font-weight: 400;
+        font-size: 1em;
+    }
+
+    .logo {
+        font-weight: 300;
+        font-size: 3em;
+        margin: 0.2em;
+
+        a {
+          font-weight: 400;
+          color: $primary-color;
+          text-decoration: none;
+        }
+    }
+}
+
+nav {
+    @extend .grey, .lighten-4;
+
+    border-bottom: 1px solid $secondary-color-light;
+
+    a.button-collapse {
+        display: inline;
+    }
+    i.material-icons {
+        font-size: 36px;
+        color: $primary-color;
+    }
+}
+
+.side-nav {
+    @extend .grey, .lighten-4;
+
+    li.map-title {
+        text-align: center;
+        color: $primary-color;
+        font-weight: 300;
+        font-size: 1.6em;
+        line-height: 56px;
+    }
+
+    .folder{
+        padding: 0 0 0 16px;
+    }
+
+    li {
+        @extend .grey, .lighten-4;
+    }
+
+    li > a {
+        @extend .blue-grey-text, .text-darken-3;
+        padding: 0 16px;
+    }
+
+    li > a > i.material-icons {
+        float: right;
+        margin: 0;
+        font-size: 24px;
+        color: $primary-color;
+    }
+
+    li > a > i.low-profile {
+        color: $secondary-color;
+    }
+
+    .current-page, .current-page:hover {
+        @extend .white-text;
+        background: $primary-color;
+    }
+}
+
+main {
+    a {
+        text-decoration: underline;
+    }
+
+    ul {
+        @extend .collection;
+        margin: 4px;
+    }
+
+    li {
+        @extend .collection-item;
+    }
+
+    table {
+        @extend .white, .striped, .z-depth-1;
+        margin: 4px;
+        width: calc(100% - 8px);
+    }
+
+    td, th {
+        padding: 8px 16px;
+    }
+
+    dt {
+        font-weight: 700;
+    }
+
+    dd {
+       margin-left: 28px;
+    }
+}
+
+footer {
+    .maintained-by {
+        padding: 12px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 0.8em;
+        color: #455a64;
+    }
+}
