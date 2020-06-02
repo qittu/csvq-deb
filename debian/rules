@@ -1,4 +1,7 @@
 #!/usr/bin/make -f
 
 %:
-	dh $@ --buildsystem=golang --with=golang
+	GOCACHE=$(CURDIR)/debian/cache dh $@
+
+override_dh_auto_install:
+	GOCACHE=$(CURDIR)/debian/cache GOPATH=$(CURDIR)/build GOBIN=$(CURDIR)/debian/tmp go install
