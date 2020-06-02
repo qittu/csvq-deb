@@ -1,8 +1,11 @@
 # github.com/mitchellh/go-homedir v1.0.0
+## explicit
 github.com/mitchellh/go-homedir
 # github.com/mithrandie/go-file/v2 v2.0.2
+## explicit
 github.com/mithrandie/go-file/v2
 # github.com/mithrandie/go-text v1.3.1
+## explicit
 github.com/mithrandie/go-text
 github.com/mithrandie/go-text/color
 github.com/mithrandie/go-text/csv
@@ -11,14 +14,19 @@ github.com/mithrandie/go-text/json
 github.com/mithrandie/go-text/ltsv
 github.com/mithrandie/go-text/table
 # github.com/mithrandie/readline-csvq v1.1.1
+## explicit
 github.com/mithrandie/readline-csvq
 # github.com/mithrandie/ternary v1.1.0
+## explicit
 github.com/mithrandie/ternary
 # github.com/urfave/cli v1.20.0
+## explicit
 github.com/urfave/cli
 # golang.org/x/crypto v0.0.0-20181112202954-3d3f9f413869
+## explicit
 golang.org/x/crypto/ssh/terminal
 # golang.org/x/sys v0.0.0-20191029155521-f43be2a4598c
+## explicit
 golang.org/x/sys/unix
 golang.org/x/sys/windows
 # golang.org/x/text v0.3.1
