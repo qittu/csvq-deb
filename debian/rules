@@ -3,5 +3,8 @@
 %:
 	GOCACHE=$(CURDIR)/debian/cache dh $@
 
+override_dh_auto_build:
+	GOCACHE=$(CURDIR)/debian/cache GOPATH=$(CURDIR)/build go build -o $(CURDIR)/build/bin/csvq
+	
 override_dh_auto_install:
 	GOCACHE=$(CURDIR)/debian/cache GOPATH=$(CURDIR)/build GOBIN=$(CURDIR)/debian/tmp go install
