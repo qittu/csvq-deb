@@ -5,18 +5,24 @@ title: Change Log - csvq
 
 # Change Log
 
+## Version 1.13.6
+
+Released on September 5, 2020
+
+- Enclose csv values containing double-quotes automatically. ([Github #37](https://github.com/mithrandie/csvq/issues/37))
+
 ## Version 1.13.2, 1.13.3
 
 Tagged for Ubuntu PPA. No changes to the behavier.
 
 ## Version 1.13.1
- 
+
 Released on May 22, 2020
 
 - Change reference scope in lateral subquery. ([Github #30](https://github.com/mithrandie/csvq/issues/30))
 
 ## Version 1.13.0
- 
+
 Released on May 20, 2020
 
 - Support LATERAL join. ([Github #24](https://github.com/mithrandie/csvq/issues/24))

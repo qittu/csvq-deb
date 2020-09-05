@@ -1,5 +1,6 @@
 GOPATH := $(shell pwd)/build
 BINARY := csvq
+RELEASE_ARCH := darwin/amd64 linux/amd64 linux/386 linux/arm freebsd/amd64 freebsd/386 freebsd/arm netbsd/amd64 netbsd/386 netbsd/arm openbsd/amd64 openbsd/386 windows/amd64 windows/386
 PRERELEASE_ARCH := darwin/amd64 linux/amd64 windows/amd64
 
 ifneq ($(shell command -v git && git remote -v 2>/dev/null | grep mithrandie/csvq.git && echo true),true)
@@ -36,11 +37,11 @@ endif
 
 .PHONY: build-all
 build-all: install-gox
-	gox $(LDFLAGS) -output="dist/${BINARY}-${VERSION}-{{.OS}}-{{.Arch}}/{{.Dir}}"
+	GOPATH=$(GOPATH) gox $(LDFLAGS) --osarch="$(RELEASE_ARCH)" -output="dist/${BINARY}-${VERSION}-{{.OS}}-{{.Arch}}/{{.Dir}}"
 
 .PHONY: build-pre-release
 build-pre-release: install-gox
-	gox $(LDFLAGS) --osarch="$(PRERELEASE_ARCH)" -output="dist/${BINARY}-${VERSION}-{{.OS}}-{{.Arch}}/{{.Dir}}"
+	GOPATH=$(GOPATH) gox $(LDFLAGS) --osarch="$(PRERELEASE_ARCH)" -output="dist/${BINARY}-${VERSION}-{{.OS}}-{{.Arch}}/{{.Dir}}"
 
 .PHONY: dist
 dist:
