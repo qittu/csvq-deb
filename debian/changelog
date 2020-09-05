@@ -1,3 +1,9 @@
+csvq (1.13.6-1ppa1) bionic; urgency=medium
+
+  * Enclose csv values containing double-quotes automatically. 
+
+ -- Yuki <qittu@me.com>  Sat, 05 Sep 2020 02:47:37 +0000
+
 csvq (1.13.3-1ppa1) bionic; urgency=medium
 
   * Fix inconsistency between source version and PPA package version. 
