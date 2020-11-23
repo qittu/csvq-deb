@@ -1,3 +1,9 @@
+csvq (1.13.7-1ppa1) bionic; urgency=medium
+
+  * Add the command option "--strict-equal".
+
+ -- Yuki <qittu@me.com>  Mon, 23 Nov 2020 01:01:39 +0000
+
 csvq (1.13.6-1ppa1) bionic; urgency=medium
 
   * Enclose csv values containing double-quotes automatically. 
