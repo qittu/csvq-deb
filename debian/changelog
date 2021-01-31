@@ -1,3 +1,9 @@
+csvq (1.13.8-1ppa1) bionic; urgency=medium
+
+  * Fix a bug in the "--import-format" option. 
+
+ -- Yuki <qittu@me.com>  Sun, 31 Jan 2021 15:25:15 +0000
+
 csvq (1.13.7-1ppa1) bionic; urgency=medium
 
   * Add the command option "--strict-equal".
