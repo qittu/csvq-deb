@@ -1,3 +1,14 @@
+csvq (1.14.0-1ppa1) bionic; urgency=medium
+
+  * Add the second argument to the DATETIME function to specify the time zone. 
+  * Interpret date and time strings as strings instead of converting them to DATETIME values when parsing.
+  * Add the following items to the configuration file.
+
+      - timezone
+      - ansi_quotes 
+
+ -- Yuki <qittu@me.com>  Tue, 09 Mar 2021 13:19:48 +0000
+
 csvq (1.13.8-1ppa1) bionic; urgency=medium
 
   * Fix a bug in the "--import-format" option. 

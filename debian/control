@@ -3,8 +3,8 @@ Section: text
 Priority: optional
 Maintainer: Yuki <qittu@me.com>
 Build-Depends: debhelper (>= 10),
-               golang-go (>= 1.15)
-Standards-Version: 1.13.8
+               golang-go (>= 1.14)
+Standards-Version: 1.14.0
 Homepage: https://github.com/mithrandie/csvq
 Vcs-Browser: https://github.com/mithrandie/csvq.git
 Vcs-Git: https://github.com/mithrandie/csvq.git
@@ -15,5 +15,4 @@ Built-Using: ${misc:Built-Using}
 Depends: ${shlibs:Depends},
          ${misc:Depends}
 Description: SQL-like query language for csv
- A command line tool to operate CSV files. You can read, update,
- delete CSV records with SQL-like query.
+ A command line tool to operate CSV files.
