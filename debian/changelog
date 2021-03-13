@@ -1,4 +1,4 @@
-csvq (1.14.0-1ppa4) bionic; urgency=medium
+csvq (1.14.0-1ppa5) bionic; urgency=medium
 
   * Add the second argument to the DATETIME function to specify the time zone. 
   * Interpret date and time strings as strings instead of converting them to DATETIME values when parsing.
@@ -7,7 +7,7 @@ csvq (1.14.0-1ppa4) bionic; urgency=medium
       - timezone
       - ansi_quotes 
 
- -- Yuki <qittu@me.com>  Tue, 09 Mar 2021 16:29:44 +0000
+ -- Yuki <qittu@me.com>  Sat, 13 Mar 2021 14:22:37 +0000
 
 csvq (1.13.8-1ppa1) bionic; urgency=medium
 
