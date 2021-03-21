@@ -1,3 +1,9 @@
+csvq (1.14.1-1ppa1) bionic; urgency=medium
+
+  * Fix a bug of dual table. 
+
+ -- Yuki <qittu@me.com>  Sun, 21 Mar 2021 21:14:25 +0000
+
 csvq (1.14.0-1ppa5) bionic; urgency=medium
 
   * Add the second argument to the DATETIME function to specify the time zone. 
