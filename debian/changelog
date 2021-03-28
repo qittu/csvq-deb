@@ -1,3 +1,21 @@
+csvq (1.15.0-1ppa1) bionic; urgency=medium
+
+  * Add regular expression functions.
+
+      - REGEXP_MATCH
+      - REGEXP_FIND
+      - REGEXP_FIND_SUBMATCHES
+      - REGEXP_FIND_ALL
+      - REGEXP_REPLACE
+
+  * Add Table-Valued functions.
+
+      - CSV_INLINE
+      - JSON_INLINE
+
+
+ -- Yuki <qittu@me.com>  Sun, 28 Mar 2021 23:51:59 +0000
+
 csvq (1.14.1-1ppa1) bionic; urgency=medium
 
   * Fix a bug of dual table. 
