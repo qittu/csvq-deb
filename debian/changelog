@@ -1,3 +1,11 @@
+csvq (1.15.1-1ppa1) bionic; urgency=medium
+
+  * Allow same table names on both sides of set operators.
+  * Add the command option "--allow-uneven-fields".
+  * Fix a bug in parsing of set operations.
+
+ -- Yuki <qittu@me.com>  Wed, 05 May 2021 00:47:28 +0000
+
 csvq (1.15.0-1ppa1) bionic; urgency=medium
 
   * Add regular expression functions.
