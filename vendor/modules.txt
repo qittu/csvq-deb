@@ -4,7 +4,7 @@ github.com/mitchellh/go-homedir
 # github.com/mithrandie/go-file/v2 v2.0.2
 ## explicit
 github.com/mithrandie/go-file/v2
-# github.com/mithrandie/go-text v1.4.0
+# github.com/mithrandie/go-text v1.4.1
 ## explicit
 github.com/mithrandie/go-text
 github.com/mithrandie/go-text/color
