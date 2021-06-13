@@ -1,3 +1,10 @@
+csvq (1.15.2-1ppa1) bionic; urgency=medium
+
+  * Allow empty key names in JSON output.
+  * Fix a bug of the "--allow-uneven-fields" option. 
+
+ -- Yuki <qittu@me.com>  Sun, 13 Jun 2021 22:02:36 +0000
+
 csvq (1.15.1-1ppa1) bionic; urgency=medium
 
   * Allow same table names on both sides of set operators.
