@@ -4,28 +4,29 @@ github.com/mitchellh/go-homedir
 # github.com/mithrandie/go-file/v2 v2.0.2
 ## explicit
 github.com/mithrandie/go-file/v2
-# github.com/mithrandie/go-text v1.4.1
+# github.com/mithrandie/go-text v1.5.2
 ## explicit
 github.com/mithrandie/go-text
 github.com/mithrandie/go-text/color
 github.com/mithrandie/go-text/csv
 github.com/mithrandie/go-text/fixedlen
 github.com/mithrandie/go-text/json
+github.com/mithrandie/go-text/jsonl
 github.com/mithrandie/go-text/ltsv
 github.com/mithrandie/go-text/table
 # github.com/mithrandie/readline-csvq v1.1.1
 ## explicit
 github.com/mithrandie/readline-csvq
-# github.com/mithrandie/ternary v1.1.0
+# github.com/mithrandie/ternary v1.1.1
 ## explicit
 github.com/mithrandie/ternary
 # github.com/urfave/cli v1.20.0
 ## explicit
 github.com/urfave/cli
-# golang.org/x/crypto v0.0.0-20210503195802-e9a32991a82e
+# golang.org/x/crypto v0.0.0-20220214200702-86341886e292
 ## explicit
 golang.org/x/crypto/ssh/terminal
-# golang.org/x/sys v0.0.0-20201119102817-f84b799fce68
+# golang.org/x/sys v0.0.0-20210615035016-665e8c7367d1
 ## explicit
 golang.org/x/sys/internal/unsafeheader
 golang.org/x/sys/plan9
@@ -33,7 +34,7 @@ golang.org/x/sys/unix
 golang.org/x/sys/windows
 # golang.org/x/term v0.0.0-20201126162022-7de9c90e9dd1
 golang.org/x/term
-# golang.org/x/text v0.3.6
+# golang.org/x/text v0.3.7
 golang.org/x/text/encoding
 golang.org/x/text/encoding/internal
 golang.org/x/text/encoding/internal/identifier
