@@ -1,3 +1,10 @@
+csvq (1.16.0-1ppa1) bionic; urgency=medium
+
+  * Support JSON Lines format.
+  * Support BOX format as an export format.
+
+ -- Yuki <qittu@me.com>  Sat, 26 Feb 2022 19:02:16 +0000
+
 csvq (1.15.2-1ppa1) bionic; urgency=medium
 
   * Allow empty key names in JSON output.
