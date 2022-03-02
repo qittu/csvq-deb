@@ -1,3 +1,9 @@
+csvq (1.16.0-1ppa2) bionic; urgency=medium
+
+  * Add arm64 to build platforms. 
+
+ -- Yuki <qittu@me.com>  Wed, 02 Mar 2022 00:43:47 +0000
+
 csvq (1.16.0-1ppa1) bionic; urgency=medium
 
   * Support JSON Lines format.
