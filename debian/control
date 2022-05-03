@@ -3,8 +3,8 @@ Section: text
 Priority: optional
 Maintainer: Yuki <qittu@me.com>
 Build-Depends: debhelper (>= 10),
-               golang (>= 1.16)
-Standards-Version: 1.16.0
+               golang (>= 1.17)
+Standards-Version: 1.17.0
 Homepage: https://github.com/mithrandie/csvq
 Vcs-Browser: https://github.com/mithrandie/csvq.git
 Vcs-Git: https://github.com/mithrandie/csvq.git

@@ -1,3 +1,18 @@
+csvq (1.17.0-1ppa1) bionic; urgency=medium
+
+  * Support column name wildcard for tables.
+  * Add a built-in function.
+    
+    - TITLE_CASE
+
+  * Modify integer and float handling.
+
+    - Fixed a bug in the conversion between integer and float.
+    - Intuitive handling of integer and float.
+    - Allow exponential notation for float. 
+
+ -- Yuki <qittu@me.com>  Tue, 03 May 2022 16:24:16 +0000
+
 csvq (1.16.0-1ppa2) bionic; urgency=medium
 
   * Add arm64 to build platforms. 
