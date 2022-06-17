@@ -1,3 +1,10 @@
+csvq (1.17.1-1ppa1) bionic; urgency=medium
+
+  * Allow analytic functions to be used as operands in expressions.
+  * Set output format from file extension.
+
+ -- Yuki <qittu@me.com>  Fri, 17 Jun 2022 14:22:24 +0000
+
 csvq (1.17.0-1ppa1) bionic; urgency=medium
 
   * Support column name wildcard for tables.
