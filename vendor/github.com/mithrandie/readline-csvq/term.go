@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-// +build darwin dragonfly freebsd linux,!appengine netbsd openbsd solaris
+//go:build darwin || dragonfly || freebsd || (linux && !appengine) || netbsd || openbsd || solaris
 
-// Package terminal provides support functions for dealing with terminals, as
+// Package readline provides support functions for dealing with terminals, as
 // commonly found on UNIX systems.
 //
 // Putting a terminal into raw mode is the most common requirement:
@@ -94,7 +94,7 @@ func ReadPassword(fd int) ([]byte, error) {
 	}
 
 	defer func() {
-		setTermios(fd, oldState)
+		_ = setTermios(fd, oldState)
 	}()
 
 	var buf [16]byte

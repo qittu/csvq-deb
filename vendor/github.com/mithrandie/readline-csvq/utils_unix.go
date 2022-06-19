@@ -1,4 +1,4 @@
-// +build darwin dragonfly freebsd linux,!appengine netbsd openbsd solaris
+//go:build darwin || dragonfly || freebsd || (linux && !appengine) || netbsd || openbsd || solaris
 
 package readline
 

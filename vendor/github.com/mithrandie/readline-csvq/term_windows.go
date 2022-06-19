@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-// +build windows
+//go:build windows
 
-// Package terminal provides support functions for dealing with terminals, as
+// Package readline provides support functions for dealing with terminals, as
 // commonly found on UNIX systems.
 //
 // Putting a terminal into raw mode is the most common requirement:
@@ -131,8 +131,8 @@ func ReadPassword(fd int) ([]byte, error) {
 	}
 	old := st
 
-	st &^= (enableEchoInput)
-	st |= (enableProcessedInput | enableLineInput | enableProcessedOutput)
+	st &^= enableEchoInput
+	st |= enableProcessedInput | enableLineInput | enableProcessedOutput
 	_, _, e = syscall.Syscall(procSetConsoleMode.Addr(), 2, uintptr(fd), uintptr(st), 0)
 	if e != 0 {
 		return nil, error(e)

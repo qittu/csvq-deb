@@ -95,7 +95,7 @@ func (t *Terminal) Readline() *Operation {
 	return NewOperation(t, t.cfg)
 }
 
-// return rune(0) if meet EOF
+// ReadRune returns rune(0) if meet EOF
 func (t *Terminal) ReadRune() rune {
 	ch, ok := <-t.outchan
 	if !ok {
@@ -198,7 +198,7 @@ func (t *Terminal) ioloop() {
 }
 
 func (t *Terminal) Bell() {
-	fmt.Fprintf(t, "%c", CharBell)
+	_, _ = fmt.Fprintf(t, "%c", CharBell)
 }
 
 func (t *Terminal) Close() error {
@@ -206,7 +206,7 @@ func (t *Terminal) Close() error {
 		return nil
 	}
 	if closer, ok := t.cfg.Stdin.(io.Closer); ok {
-		closer.Close()
+		_ = closer.Close()
 	}
 	close(t.stopChan)
 	t.wg.Wait()
