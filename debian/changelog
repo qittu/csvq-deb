@@ -1,3 +1,9 @@
+csvq (1.17.3-1ppa1) bionic; urgency=medium
+
+  * Set the default format to csv when the output is piped.
+
+ -- Yuki <qittu@me.com>  Sun, 19 Jun 2022 22:02:03 +0000
+
 csvq (1.17.1-1ppa1) bionic; urgency=medium
 
   * Allow analytic functions to be used as operands in expressions.
