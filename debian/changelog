@@ -1,3 +1,9 @@
+csvq (1.17.4-1ppa1) bionic; urgency=medium
+
+  * Add the IF NOT EXISTS clause to the syntax of the CREATE TABLE statement.
+
+ -- Yuki <qittu@me.com>  Sat, 25 Jun 2022 15:28:52 +0000
+
 csvq (1.17.3-1ppa1) bionic; urgency=medium
 
   * Set the default format to csv when the output is piped.
