@@ -1,3 +1,9 @@
+csvq (1.17.5-1ppa1) bionic; urgency=medium
+
+  * Fix a bug of the CASE expression.
+
+ -- Yuki <qittu@me.com>  Sun, 26 Jun 2022 02:55:57 +0000
+
 csvq (1.17.4-1ppa1) bionic; urgency=medium
 
   * Add the IF NOT EXISTS clause to the syntax of the CREATE TABLE statement.
