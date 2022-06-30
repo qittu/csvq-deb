@@ -1,3 +1,9 @@
+csvq (1.17.6-1ppa1) bionic; urgency=medium
+
+  * Fix a bug in REPLACE query.
+
+ -- Yuki <qittu@me.com>  Thu, 30 Jun 2022 14:14:09 +0000
+
 csvq (1.17.5-1ppa1) bionic; urgency=medium
 
   * Fix a bug of the CASE expression.
