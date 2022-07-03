@@ -1,3 +1,13 @@
+csvq (1.17.7-1ppa1) bionic; urgency=medium
+
+  * Add system defined constants.
+  * Add the command option --scientific-notation.
+  * Handle NaN and Infinity.
+  * Add several numeric and datetime functions.
+  * Fix some bugs.bugs 
+
+ -- Yuki <qittu@me.com>  Sun, 03 Jul 2022 21:00:55 +0000
+
 csvq (1.17.6-1ppa1) bionic; urgency=medium
 
   * Fix a bug in REPLACE query.
