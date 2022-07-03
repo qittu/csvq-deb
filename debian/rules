@@ -4,7 +4,8 @@
 	GOCACHE=$(CURDIR)/debian/cache dh $@
 
 override_dh_auto_build:
-	GOCACHE=$(CURDIR)/debian/cache GOPATH=$(CURDIR)/build go build -trimpath -ldflags="-s -w" -o $(CURDIR)/build/bin/csvq
+	GOCACHE=$(CURDIR)/debian/cache GOPATH=$(CURDIR)/build go build -tags urfave_cli_no_docs -trimpath -ldflags="-s -w" -o $(CURDIR)/build/bin/csvq
 	
 override_dh_auto_install:
-	GOCACHE=$(CURDIR)/debian/cache GOPATH=$(CURDIR)/build GOBIN=$(CURDIR)/debian/tmp go install
+	GOCACHE=$(CURDIR)/debian/cache GOPATH=$(CURDIR)/build GOBIN=$(CURDIR)/debian/tmp go install -tags urfave_cli_no_docs -trimpath -ldflags="-s -w"
+
