@@ -1,3 +1,10 @@
+csvq (1.17.10-1ppa1) bionic; urgency=medium
+
+  * Sort the command options displayed in the help message.
+  * Fix some bugs. 
+
+ -- Yuki <qittu@me.com>  Sun, 14 Aug 2022 12:37:48 +0000
+
 csvq (1.17.8-1ppa1) bionic; urgency=medium
 
   * Allow URLs and Table identification functions to be used as table identifiers.
