@@ -13,10 +13,10 @@ In the multiple operations, you can use variables, cursors, temporary tables, an
 
 ## Latest Release
 
-Version 1.17.8
-: Released on Jul 24, 2022
+Version 1.17.10
+: Released on Aug 14, 2022
 
-  <a class="waves-effect waves-light btn" href="https://github.com/mithrandie/csvq/releases/tag/v1.17.8">
+  <a class="waves-effect waves-light btn" href="https://github.com/mithrandie/csvq/releases/tag/v1.17.10">
     <i class="material-icons left">file_download</i>download
   </a>
 
@@ -27,9 +27,9 @@ It is not suitable for handling very large data since all data is kept on memory
 There is no indexing, calculation order optimization, etc., and the execution speed is not fast due to the inclusion of mechanisms for updating data and handling various other features.
 
 However, it can be run with a single executable binary, and you don't have to worry about troublesome dependencies during installation.
-You can not only write and run your own queries, but also give the source files to your coworkers to run.
+You can not only write and run your own queries, but also share source files with co-workers on multiple platforms.
 
-This tool may be useful for those who want to handle data easily without having to think about troublesome matters.
+This tool may be useful for those who want to handle data easily and roughly, without having to think about troublesome matters.
 
 ## Features
 
