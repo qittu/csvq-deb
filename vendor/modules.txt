@@ -17,7 +17,7 @@ github.com/mithrandie/go-text/json
 github.com/mithrandie/go-text/jsonl
 github.com/mithrandie/go-text/ltsv
 github.com/mithrandie/go-text/table
-# github.com/mithrandie/readline-csvq v1.2.0
+# github.com/mithrandie/readline-csvq v1.2.1
 ## explicit; go 1.17
 github.com/mithrandie/readline-csvq
 # github.com/mithrandie/ternary v1.1.1
@@ -32,10 +32,10 @@ github.com/urfave/cli/v2
 # github.com/xrash/smetrics v0.0.0-20201216005158-039620a65673
 ## explicit
 github.com/xrash/smetrics
-# golang.org/x/crypto v0.0.0-20220525230936-793ad666bf5e
+# golang.org/x/crypto v0.0.0-20220722155217-630584e8d5aa
 ## explicit; go 1.17
 golang.org/x/crypto/ssh/terminal
-# golang.org/x/sys v0.0.0-20220615213510-4f61da869c0c
+# golang.org/x/sys v0.0.0-20220310020820-b874c991c1a5
 ## explicit; go 1.17
 golang.org/x/sys/internal/unsafeheader
 golang.org/x/sys/plan9
