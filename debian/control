@@ -4,8 +4,8 @@ Priority: optional
 Maintainer: Yuki <qittu@me.com>
 Build-Depends: debhelper (>= 10),
                golang (>= 1.17)
-Standards-Version: 1.17.10
-Homepage: https://github.com/mithrandie/csvq
+Standards-Version: 1.17.11
+Homepage: https://github.com/mithrandie/csvq/
 Vcs-Browser: https://github.com/mithrandie/csvq.git
 Vcs-Git: https://github.com/mithrandie/csvq.git
 
