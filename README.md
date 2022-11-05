@@ -42,12 +42,12 @@ This tool may be useful for those who want to handle data easily and roughly, wi
 * Transaction Management
 * Support loading data from Standard Input
 * Support following file formats
-  * CSV
+  * [CSV](https://datatracker.ietf.org/doc/html/rfc4180)
   * TSV
-  * LTSV
+  * [LTSV](http://ltsv.org)
   * Fixed-Length Format
-  * JSON
-  * JSON Lines
+  * [JSON](https://datatracker.ietf.org/doc/html/rfc8259)
+  * [JSON Lines](https://jsonlines.org)
 * Support following file encodings
   * UTF-8
   * UTF-16
@@ -85,6 +85,10 @@ Installing using a package manager does not ensure that you always get the lates
 1. ```$ sudo add-apt-repository ppa:mithrandie/csvq```
 2. ```$ sudo apt update```
 3. ```$ sudo apt install csvq```
+
+#### Arch Linux (unofficial)
+
+Install the [csvq-git](https://aur.archlinux.org/packages/csvq-git) or [csvq-bin](https://aur.archlinux.org/packages/csvq-bin) from the [Arch User Repository](https://wiki.archlinux.org/title/Arch_User_Repository) (e.g. `yay -S csvq-git`)
 
 #### macOS (unofficial)
 
